@@ -683,7 +683,16 @@ define Device/oolite
     TPLINK_HWID := 0x3C000101
     CONSOLE := ttyATH0,115200
 endef
-TARGET_DEVICES += oolite
+
+define Device/oolite-kroks
+    $(Device/tplink-16mlzma)
+    BOARDNAME := GS-OOLITE-KROKS
+    DEVICE_PROFILE := OOLITEKROKS
+    TPLINK_HWID := 0x3C000102
+    CONSOLE := ttyATH0,115200
+endef
+TARGET_DEVICES += oolite oolite-kroks
+
 
 rootfs_type=$(patsubst jffs2-%,jffs2,$(patsubst squashfs-%,squashfs,$(1)))
 
