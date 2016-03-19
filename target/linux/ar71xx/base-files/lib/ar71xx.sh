@@ -318,6 +318,9 @@ ar71xx_board_detect() {
 	machine=$(awk 'BEGIN{FS="[ \t]+:[ \t]"} /machine/ {print $2}' /proc/cpuinfo)
 
 	case "$machine" in
+	*"KR-ATP-1A")
+		name="kr-atp-1a"
+		;;
 	*"Oolite V1.0")
 		name="oolite"
 		;;

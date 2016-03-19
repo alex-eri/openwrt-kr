@@ -1,0 +1,1 @@
+../../../../krinit/openwrt/Makefile

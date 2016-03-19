@@ -15,6 +15,14 @@ ucidef_set_interface_loopback
 board=$(ar71xx_board_name)
 
 case "$board" in
+kr-atp-1a)
+	ucidef_set_interface_lan "eth0.2 wlan0"
+	ucidef_add_switch "switch0" "1" "1"
+	ucidef_add_switch_vlan "switch0" "0" " "
+	ucidef_add_switch_vlan "switch0" "1" "0t 2"
+	ucidef_add_switch_vlan "switch0" "2" "0t 1"
+	;;
+
 all0315n |\
 all0258n |\
 ja76pf2|\

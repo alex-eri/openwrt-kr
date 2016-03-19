@@ -316,6 +316,7 @@ platform_check_image() {
 	minibox-v1 |\
 	onion-omega | \
 	oolite | \
+	kr-atp-1a|\
 	smart-300 | \
 	tl-mr10u | \
 	tl-mr11u | \

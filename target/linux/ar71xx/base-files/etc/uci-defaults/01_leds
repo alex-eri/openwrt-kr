@@ -9,6 +9,12 @@
 board=$(ar71xx_board_name)
 
 case "$board" in
+kr-atp-1a)
+	ucidef_set_led_switch "lan1" "lan1" "kroks:red:lan1" "switch0" "0x04"
+	ucidef_set_led_switch "lan2" "lan2" "kroks:red:lan2" "switch0" "0x02"
+	ucidef_set_led_default "usb" "usb" "kroks:sw:usb" 1
+	;;
+
 airgateway)
 	ucidef_set_led_wlan "wlan" "WLAN" "ubnt:blue:wlan" "phy0tpt"
 	;;

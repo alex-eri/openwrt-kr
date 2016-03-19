@@ -79,6 +79,7 @@ whr-hp-gn|\
 wzr-hp-ag300h|\
 wzr-hp-g450h|\
 ew-dorin|\
+kr-atp-1a|\
 ew-dorin-router)
 	migrate_switch_name "eth0" "switch0"
 	;;
